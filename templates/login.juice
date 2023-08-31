@@ -1,0 +1,25 @@
+{ extends "layout" }
+
+{ block "title" } Login { /block }
+
+{ block "content" }
+	<div class="container">
+		{ ifError }
+			<div class="alert">
+				{ error }
+			</div>
+		{ /ifError }
+
+		<div class="form">
+			<form method="POST">
+				{ csrf }
+				<h1>Welcome back!</h1>
+				<input type="text" name="username" placeholder="username..." required>
+				<input type="password" name="password" placeholder="password..." required>
+				<button type="submit">continue</button>
+			</form>
+
+			<p>Need an account? <a href="/register">Register</a></p>
+		</div>
+	</div>
+{ /block }

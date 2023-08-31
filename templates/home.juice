@@ -1,0 +1,11 @@
+{ extends "layout" }
+
+{ block "title" } Home { /block }
+
+{ block "content" }
+	<div class="container">
+		User ID: {{ Lemon\Session::get("userid") }}
+		Username: {{ Lemon\Session::get("username") }}
+		<a href="/logout">Logout</a>
+	</div>
+{ /block }
