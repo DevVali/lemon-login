@@ -1,4 +1,6 @@
 vendor
 node_modules
 .env
-database.sqlite
+public/**/*.js
+public/**/*.css
+*.sqlite
