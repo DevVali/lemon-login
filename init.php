@@ -13,13 +13,13 @@ $application->loadZests();
 
 $application->loadHandler();
 
+$application->get("config")->load();
+
 /** @var \Lemon\Routing\Router $router */
 $router = $application->get("routing");
 
 $router->file("routes.web")
     ->middleware(Csrf::class)
 ;
-
-config("debug.debug", true);
 
 return $application;

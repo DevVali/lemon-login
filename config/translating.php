@@ -3,6 +3,6 @@
 declare(strict_types=1);
 
 return [
-    "directory" => "translations",
-    "fallback" => "en",
+    "directory" => "resources.translations",
+    "fallback" => "en"
 ];
