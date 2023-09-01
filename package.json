@@ -1,0 +1,19 @@
+{
+  "name": "lemon-login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevVali/lemon-login.git"
+  },
+  "author": "DevVali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevVali/lemon-login/issues"
+  },
+  "homepage": "https://github.com/DevVali/lemon-login#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "postcss-custom-properties": "^13.3.0"
+  }
+}
