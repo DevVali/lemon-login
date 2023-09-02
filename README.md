@@ -11,9 +11,9 @@ This repository contains simple login system based on Lemon.
 ## Installation
 
 ```
-> git clone https://github.com/DevVali/lemon-login
+$ git clone https://github.com/DevVali/lemon-login
 
-> make
+$ make
 ```
 
 ## Resources
