@@ -2,12 +2,13 @@
 
 namespace App\Controllers;
 
+use Lemon\Http\Session;
 use Lemon\Templating\Template;
 
 class Home
 {
-	public function get(): Template
+	public function get(Session $session): Template
 	{
-		return template("home");
+		return template("home", session: $session);
 	}
 }

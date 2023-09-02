@@ -1,3 +1,179 @@
-.example {
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+:root {
+    --bg: #1e1e1f;
+    --text: #f0e9e9;
+    --priamry: #7dadd4;
+    --secondary: #292b2e;
+    --destructive: #d47d7d;
+    --font: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.container {
+    height: 200px;
+    position: relative;
+
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.container .home, .container .alert, .container .form {
+    transform: translate(-50%, 15%);
+}
+
+.home {
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.home .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition-duration: 0.4s;
+}
+.home .btn-primary {
+    background-color: var(--priamry);
+    color: var(--text);
+}
+.home .btn-primary:hover {
+    opacity: 60%;
+}
+
+.alert {
+    z-index: 1;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 20px);
+}
+.alert button {
+    cursor: pointer;
+    background-color: var(--destructive);
+    color: var(--text);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--destructive);
+    padding: 15px;
+}
+
+.form {
+    z-index: 0;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    padding: 50px 50px 100px;
+}
+.form h1 {
+    text-align: center;
+    margin: 0px 0px 40px;
+}
+.form input:not(:first-child) {
+    margin-top: 10px;
+}
+.form input {
+    width: 100%;
+    margin-bottom: 5px;
+
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 14px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+}
+.form input:focus {
+    outline: none;
+}
+.form button {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+
+    background-color: var(--priamry);
+    color: var(--text);
+    padding: 25px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition-duration: 0.4s;
+}
+.form button:hover {
+    background-color: var(--text);
+    color: var(--priamry);
+}
+.form p {
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+}
+.form a {
+    color: var(--text);
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .form {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .form {
+        width: 150px;
+    }
+    .home {
+        width: 200px;
+    }
+    .alert {
+        top: calc(50% + 12px);
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .alert {
+        top: calc(50% - 10px);
+    }
 }

@@ -3,24 +3,22 @@
 { block "title" } Register { /block }
 
 { block "content" }
-	<div class="container">
-		{ ifError }
-			<div class="alert">
-				{ error }
-			</div>
-		{ /ifError }
-
-		<div class="form">
-			<form method="POST">
-				{ csrf }
-				<h1>Create an account</h1>
-				<input type="text" name="username" placeholder="username..." required>
-				<input type="text" name="email" placeholder="email..." required>
-				<input type="password" name="password" placeholder="password..." required>
-				<button type="submit">continue</button>
-			</form>
-
-			<p><a href="/login">Already have an account?</a></p>
+	{ ifError }
+		<div class="alert">
+			<button type="button">{ error }</button>
 		</div>
+	{ /ifError }
+
+	<div class="form">
+		<form method="POST">
+			{ csrf }
+			<h1>Create an account</h1>
+			<input type="text" name="username" placeholder="username..." required>
+			<input type="text" name="email" placeholder="email..." required>
+			<input type="password" name="password" placeholder="password..." required>
+			<button type="submit">continue</button>
+		</form>
+
+		<p style="width:175.375px"><a href="/login">Already have an account?</a></p>
 	</div>
 { /block }

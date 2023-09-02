@@ -27,7 +27,7 @@ class Login
 		$user = (DB::query("SELECT * FROM users WHERE uid = ?", $uid)->fetchAll()[0] ?? null);
 
 		if (!$user || !password_verify($request->get("password"), $user["pwd"])) {
-           	Validator::addError("wrong-login", "username or password", "");
+           	Validator::addError("wrong-login", "login info", "");
             return template("login");
 		}
 
