@@ -2,7 +2,7 @@
 
 This repository contains simple login system based on Lemon.
 
-## Live Demo
+## Live demo
 
 Live demo is available [here](https://lemon-login.devvali.repl.co/login).
 
