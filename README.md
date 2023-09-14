@@ -2,11 +2,9 @@
 
 This repository contains simple login system based on Lemon.
 
-## Requirements 
+## Live Demo
 
-- PHP 8.1+
-- Yarn
-- NodeJS
+Live demo is available [here](https://lemon-login.devvali.repl.co/login).
 
 ## Installation
 
@@ -15,6 +13,8 @@ $ git clone https://github.com/DevVali/lemon-login
 
 $ make
 ```
+
+For successfull installation is required PHP 8.1+, Yarn and NodeJS.
 
 ## Resources
 
