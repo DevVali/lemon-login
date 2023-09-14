@@ -14,7 +14,7 @@ $ git clone https://github.com/DevVali/lemon-login
 $ make
 ```
 
-For successfull installation is required PHP 8.1+, Yarn and NodeJS.
+PHP 8.1+, Yarn and NodeJS are required for successful installation.
 
 ## Resources
 
